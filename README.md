@@ -1,5 +1,6 @@
 # Diario de Trading Algorítmico
 - Cuaderno técnico personal, público y en constante crecimiento.  
+- Soy **autodidacta**, así que esto es mi espacio de aprendizaje real: código, pruebas, errores y hallazgos.  
 - No es un curso. Son mis apuntes, fragmentos y soluciones que consulto cuando los necesito — y que comparto por si a alguien más le sirven.
 
 ## ¿Qué es esto?
