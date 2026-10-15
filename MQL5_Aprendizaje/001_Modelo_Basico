@@ -1,0 +1,53 @@
+Esta es una prueba de MarkDown y código.
+
+```Mql5
+//+------------------------------------------------------------------+
+//|                                             0001_Basic_Model.mq5 |
+//|                                                 Gerardo Calvetty |
+//|                                             https://www.mql5.com |
+//+------------------------------------------------------------------+
+//--- Inclusion de archivos (#include) MRL_MQL5 Pag. 249
+//--- Libreria estándar MRL_MQL5 Pag. 2175
+//--- Clases de trading MRL_MQL5 Pag. 4533
+#include<Trade\Trade.mqh> // <nombre_de_archivo> o "nombre_de_archivo"
+//-- Crear una instancia de CTrade: Clase de las ejecuciones de las operaciones de trading
+CTrade trade; // Nos ayudara a usar la compra simple
+
+//+------------------------------------------------------------------+
+//| Funcion experta de tick                                          |
+//+------------------------------------------------------------------+
+void OnTick()
+  {
+   //--- Información sobre el instrumento ---------------------------+
+   
+   // Obtenga el precio Bid
+   double Bid = NormalizeDouble(SymbolInfoDouble(_Symbol,SYMBOL_BID),_Digits);
+   
+   // Obtenga el precio Ask
+   double Ask = NormalizeDouble(SymbolInfoDouble(_Symbol,SYMBOL_ASK),_Digits);
+   
+   // Crear una cadena vacía para la señal
+   string Signal = "";
+   
+   //--- Proceso o algoritmo ----------------------------------------+ 
+   
+
+   //--- Funciones de trading ---------------------------------------+
+   
+   // Buy 0.01 volumen de la posición
+   if(Signal == "Buy" && PositionsTotal() < 1)
+      trade.Buy(0.01,NULL,Ask,(Ask - 200 * _Point),(Ask + 150 * _Point),NULL);
+   
+   // Sell 0.01 volumen de la posición
+   if(Signal == "Sell" && PositionsTotal() < 1)
+      trade.Sell(0.01,NULL,Bid,(Bid + 200 * _Point),(Bid - 150 * _Point),NULL);
+
+   //--- Salida de resultados ---------------------------------------+
+   
+   // Salida del gráfico
+   Comment("La señal es ahora: ",Signal);
+   
+   //---
+  }
+//+------------------------------------------------------------------+
+```
