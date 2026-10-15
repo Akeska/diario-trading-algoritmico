@@ -1,6 +1,6 @@
 # Diario de Trading Algorítmico
 - Cuaderno técnico personal, público y en constante crecimiento.  
-- Soy **autodidacta**, así que esto es mi espacio de aprendizaje real: código, pruebas, errores y hallazgos.  
+- Soy **autodidacta**. No vengo de una carrera formal en programación ni en finanzas — aprendí MQL5, trading algorítmico y todo lo que hay aquí a base de pruebas, errores, documentación y mucha curiosidad.
 - No es un curso. Son mis apuntes, fragmentos y soluciones que consulto cuando los necesito — y que comparto por si a alguien más le sirven.
 
 ## ¿Qué es esto?
