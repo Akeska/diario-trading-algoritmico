@@ -33,5 +33,5 @@ Puedes usar, modificar y distribuir el código libremente, manteniendo el aviso 
 Consulta el archivo [LICENSE](./LICENSE) para más detalles.
 
 ## 🔗 Enlaces
-- **Perfil de GitHub:** [@Akeska].(https://github.com/Akeska)
+- **Perfil de GitHub:** [@Akeska](https://github.com/Akeska)
 - **Contacto:** akeskgerard@gmail.com
